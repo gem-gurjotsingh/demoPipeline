@@ -1,5 +1,5 @@
-FROM openjdk:17
+FROM openjdk:11
 
-COPY target/demoPipeline-0.0.1-SNAPSHOT.jar demoPipeline-0.0.1-SNAPSHOT.jar
+COPY target/demo-pipeline.jar demo-pipeline.jar
 
-ENTRYPOINT ["java","-jar","/demoPipeline-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/demo-pipeline"]
